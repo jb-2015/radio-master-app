@@ -10,3 +10,14 @@ body{
 #logo{
     width: 380px;
 }
+
+
+@media (max-width: 768px) {
+  /* estilos para celular */
+
+  body{
+    background-image: url(fondoCelulares.jpg);
+    background-size: cover;
+    
+  }
+}
