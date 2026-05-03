@@ -1,4 +1,12 @@
 body{
     background-image: url(fondo.avif);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    width: 380px;
 }
