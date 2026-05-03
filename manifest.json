@@ -1,6 +1,6 @@
 {
   "name": "Radio Master",
-  "short_name": "Radio",
+  "short_name": "Radio Master",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
