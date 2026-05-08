@@ -6,11 +6,30 @@
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script id='sonic_js' data-port='8352' src='https://srv10.streamingradio.ar/cp/widgets.js?r=254'></script>
 </head>
 <body>
 
-  <img src="logoradio.png" id="logo" alt="">
-  <iframe src="https://srv10.streamingradio.ar/cp/widgets/player/single/?p=8352" height="110" width="100%" scrolling="no" style="border:none;"></iframe>
+  <!--<img src="logoradio.png" id="logo" alt="">
+  <iframe src="https://srv10.streamingradio.ar/cp/widgets/player/single/?p=8352" height="110" width="100%" scrolling="no" style="border:none;"></iframe>-->
+
+  <div class="radio-container">
+
+    <img src="logoradio.png" alt="Radio Master" class="logo">
+
+    <button id="playBtn">▶</button>
+
+    <div class="info">
+      <div id='sonic_title'></div>
+    </div>
+
+</div>
+
+<audio id="radio">
+    <source src="https://srv10.streamingradio.ar:8352/stream" type="audio/mpeg">
+</audio>
+
+
 
   <script src="app.js"></script>
 

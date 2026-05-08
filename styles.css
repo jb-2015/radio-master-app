@@ -11,6 +11,51 @@ body{
     width: 380px;
 }
 
+.radio-container{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.logo{
+    width:286px;
+    margin-bottom:30px;
+}
+
+#playBtn{
+    width:120px;
+    height:120px;
+    border:none;
+    border-radius:50%;
+    background:#f86605;
+    color:white;
+    font-size:50px;
+    cursor:pointer;
+    transition:0.3s;
+    margin-left: 85px;
+}
+
+#playBtn:hover{
+    transform:scale(1.05);
+}
+
+.estado{
+    color:white;
+    margin-top:20px;
+    font-size:18px;
+}
+.info{
+  
+    font-family: sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    margin-top: 100px;
+
+}
 
 @media (max-width: 768px) {
   /* estilos para celular */
