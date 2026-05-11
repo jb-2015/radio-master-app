@@ -25,12 +25,12 @@ body{
 }
 
 #playBtn{
-    width:120px;
-    height:120px;
+    width:200px;
+    height: 200px;
     border:none;
     border-radius:50%;
-    background:#f86605;
-    color:white;
+    background:rgba(255,255,255,0.7);
+    color:black;
     font-size:50px;
     cursor:pointer;
     transition:0.3s;
@@ -66,7 +66,7 @@ body{
 
   }
   #playBtn{
-    margin-left: 112px;
+    margin-left: 80px;
   }
   .logo{
     margin-left: 30px;
