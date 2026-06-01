@@ -47,7 +47,7 @@ body{
     font-size:18px;
 }
 .info{
-  
+    display: none;
     font-family: sans-serif;
     font-size: xx-large;
     font-weight: bold;
