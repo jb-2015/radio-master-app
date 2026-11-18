@@ -1,50 +1,267 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Radio Master</title>
+  <title>La Hora Master</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211333">
+
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script id='sonic_js' data-port='8352' src='https://srv10.streamingradio.ar/cp/widgets.js?r=254'></script>
+
+  <script id="sonic_js"
+    data-port="8352"
+    src="https://srv10.streamingradio.ar/cp/widgets.js?r=254">
+  </script>
 </head>
+
 <body>
 
-  <!--<img src="logoradio.png" id="logo" alt="">
-  <iframe src="https://srv10.streamingradio.ar/cp/widgets/player/single/?p=8352" height="110" width="100%" scrolling="no" style="border:none;"></iframe>-->
+  <!-- BARRA SUPERIOR: RADIO SIEMPRE VISIBLE -->
+  <header class="radio-bar">
 
-  <div class="radio-container">
+    <div class="radio-identidad">
+      <img src="logoradio.png" alt="Radio Master" class="logo">
 
-    <img src="logoradio.png" alt="Radio Master" class="logo">
-
-    <button id="playBtn">▶</button>
-
-    <div class="info">
-      <div id='sonic_title'></div>
+      <div class="radio-textos">
+        <strong>RADIO MASTER</strong>
+        <span><i class="punto-en-vivo"></i> EN VIVO</span>
+      </div>
     </div>
 
-</div>
-<div class="novedades">
-  <div class="novedades-etiqueta">
-    ✨ ALGO NUEVO SE VIENE
-  </div>
-  <h3>Radio Master está creciendo...</h3>
-  <p>Muy pronto, nuevas experiencias para vos.</p>
-  <span>PRÓXIMAMENTE</span>
-</div>
-<a
-  href="https://wa.me/5492664848066?text=Hola%21%20Estoy%20escuchando%20Radio%20Master%21"
-  class="whatsapp-button"
-  target="_blank"
-  aria-label="Escribir por WhatsApp"
->
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
-</a>
+    <div class="radio-controles">
+      <div id="sonic_title" class="sonic-title"></div>
+      <button id="playBtn" aria-label="Escuchar radio">▶</button>
+    </div>
 
-<audio id="radio">
-    <source src="https://srv10.streamingradio.ar/8352/stream" type="audio/mpeg">
-</audio>
+  </header>
 
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="contenido-principal">
+
+    <!-- INICIO -->
+    <section id="inicio" class="seccion activa">
+
+      <div class="bienvenida">
+        <span class="subtitulo">BIENVENIDO A</span>
+        <h1>La Hora Master</h1>
+        <p>Un espacio para escuchar, aprender y compartir.</p>
+      </div>
+
+      <div class="novedades">
+        <div class="novedades-etiqueta">
+          ✨ ALGO NUEVO SE VIENE
+        </div>
+
+        <h2>Radio Master está creciendo...</h2>
+        <p>Muy pronto, nuevas experiencias para vos.</p>
+
+        <span>PRÓXIMAMENTE</span>
+      </div>
+
+
+      <!-- VIDEOS -->
+      <div class="bloque-contenido">
+
+        <div class="titulo-seccion">
+          <div>
+            <h2>Videos cortos</h2>
+            <p>Un momento para reflexionar.</p>
+          </div>
+          <span class="icono-titulo">▶</span>
+        </div>
+
+        <div class="videos-grid">
+
+          <article class="video-card">
+            <div class="video-placeholder">
+              <span>▶</span>
+              <small>PRÓXIMAMENTE</small>
+            </div>
+            <h3>Reflexiones</h3>
+            <p>Palabras para tu día.</p>
+          </article>
+
+          <article class="video-card">
+            <div class="video-placeholder">
+              <span>▶</span>
+              <small>PRÓXIMAMENTE</small>
+            </div>
+            <h3>La Hora Master</h3>
+            <p>Fragmentos de nuestros programas.</p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BLOG -->
+    <section id="blog" class="seccion">
+
+      <div class="encabezado-pagina">
+        <span class="subtitulo">LECTURAS Y REFLEXIONES</span>
+        <h1>Nuestro Blog</h1>
+        <p>Una palabra que puede acompañarte cada día.</p>
+      </div>
+
+      <article class="articulo-destacado">
+
+        <div class="articulo-etiqueta">DEVOCIONAL</div>
+
+        <h2>Aprender a confiar cuando no entendemos el camino</h2>
+
+        <p>
+          A veces no comprendemos por qué suceden ciertas cosas
+          ni hacia dónde nos está llevando Dios. Sin embargo,
+          confiar también significa caminar aun cuando no
+          tenemos todas las respuestas.
+        </p>
+
+        <blockquote>
+          "Porque por fe andamos, no por vista."
+          <strong>2 Corintios 5:7</strong>
+        </blockquote>
+
+        <p>
+          Nuestra fe no depende de tener todo resuelto,
+          sino de conocer a Aquel que guía nuestros pasos.
+        </p>
+
+      </article>
+
+      <div class="mensaje-blog">
+        <span>📖</span>
+        <h3>Más reflexiones próximamente</h3>
+        <p>Estamos preparando nuevos devocionales para compartir.</p>
+      </div>
+
+    </section>
+
+
+    <!-- INFO -->
+    <section id="info" class="seccion">
+
+      <div class="encabezado-pagina">
+        <span class="subtitulo">CONOCÉ NUESTRO PROYECTO</span>
+        <h1>Información</h1>
+        <p>Todo lo que necesitás saber sobre La Hora Master.</p>
+      </div>
+
+
+      <div class="info-card">
+        <span class="info-icono">📻</span>
+        <h2>Radio Master</h2>
+        <p>
+          Nuestra radio transmite música y contenidos
+          para acompañarte durante el día.
+        </p>
+      </div>
+
+
+      <div class="info-card">
+        <span class="info-icono">📅</span>
+        <h2>Programación</h2>
+
+        <div class="horario-item">
+          <div>
+            <strong>La Hora Master</strong>
+            <p>Sábados</p>
+          </div>
+          <span>12:30 hs</span>
+        </div>
+
+        <div class="horario-item">
+          <div>
+            <strong>Radio Amistad</strong>
+            <p>Villa Larca · 95.5 FM</p>
+          </div>
+          <span>Sábados</span>
+        </div>
+
+        <p class="nota-info">
+          Próximamente publicaremos más horarios y días de contenido.
+        </p>
+      </div>
+
+
+      <div class="info-card">
+        <span class="info-icono">💜</span>
+        <h2>Nuestra historia</h2>
+        <p>
+          La Hora Master nació con el deseo de comunicar,
+          compartir enseñanzas y crear un espacio donde
+          las personas puedan escuchar, aprender y crecer.
+        </p>
+        <p>
+          A través de la radio, los programas y los contenidos
+          digitales, queremos seguir llegando a más personas.
+        </p>
+      </div>
+
+
+      <div class="info-card">
+        <span class="info-icono">💬</span>
+        <h2>Contactanos</h2>
+        <p>Nos gustaría saber de vos.</p>
+        <a class="contacto-link"
+           href="https://wa.me/5492664848066"
+           target="_blank">
+          Escribir por WhatsApp
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a
+    href="https://wa.me/5492664848066?text=Hola%21%20Estoy%20escuchando%20Radio%20Master%21"
+    class="whatsapp-button"
+    target="_blank"
+    aria-label="Escribir por WhatsApp">
+
+    <img
+      src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+      alt="WhatsApp">
+
+  </a>
+
+
+  <!-- NAVEGACIÓN INFERIOR -->
+  <nav class="navegacion-inferior" aria-label="Navegación principal">
+
+    <button class="nav-btn activo" data-seccion="inicio">
+      <span class="nav-icono">⌂</span>
+      <span>Inicio</span>
+    </button>
+
+    <button class="nav-btn" data-seccion="blog">
+      <span class="nav-icono">▤</span>
+      <span>Blog</span>
+    </button>
+
+    <button class="nav-btn" data-seccion="info">
+      <span class="nav-icono">ⓘ</span>
+      <span>Info</span>
+    </button>
+
+  </nav>
+
+
+  <!-- UN ÚNICO REPRODUCTOR PARA TODA LA APP -->
+  <audio id="radio" preload="none">
+    <source
+      src="https://srv10.streamingradio.ar/8352/stream"
+      type="audio/mpeg">
+  </audio>
 
 
   <script src="app.js"></script>
