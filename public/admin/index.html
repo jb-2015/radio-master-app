@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#15110e">
+
+  <title>Administración | La Hora Master</title>
+
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+
+<body>
+
+  <div class="admin-layout">
+
+    <aside class="sidebar" id="sidebar">
+
+      <div class="brand">
+        <div class="brand-icon">📻</div>
+        <div>
+          <h2>LA HORA MASTER</h2>
+          <span>Administración</span>
+        </div>
+      </div>
+
+      <nav class="menu">
+
+        <p class="menu-label">GENERAL</p>
+
+        <button class="menu-item active" data-section="dashboard">
+          <span>▦</span> Panel principal
+        </button>
+
+        <p class="menu-label">CONTENIDOS</p>
+
+        <button class="menu-item" data-section="publicaciones">
+          <span>▤</span> Publicaciones
+        </button>
+
+        <button class="menu-item" data-section="videos">
+          <span>▷</span> Videos
+        </button>
+
+        <button class="menu-item" data-section="novedades">
+          <span>◈</span> Novedades
+        </button>
+
+        <p class="menu-label">SISTEMA</p>
+
+        <button class="menu-item" data-section="configuracion">
+          <span>⚙</span> Configuración
+        </button>
+
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="admin-avatar">A</div>
+        <div>
+          <strong>Administrador</strong>
+          <span>Panel de gestión</span>
+        </div>
+      </div>
+
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <div class="breadcrumb">
+          La Hora Master / <strong id="pageTitle">Panel principal</strong>
+        </div>
+
+        <a href="/" target="_blank" class="view-site">
+          Ver sitio ↗
+        </a>
+
+      </header>
+
+      <div class="content">
+
+        <section class="admin-section active" id="dashboard">
+
+          <div class="page-heading">
+            <div>
+              <h1>Panel de control</h1>
+              <p>Bienvenido al administrador de La Hora Master.</p>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+
+            <article class="stat-card">
+              <div class="stat-icon">▤</div>
+              <div class="stat-info">
+                <span>Publicaciones</span>
+                <strong>0</strong>
+                <small>Artículos y reflexiones</small>
+              </div>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-icon">▷</div>
+              <div class="stat-info">
+                <span>Videos</span>
+                <strong>0</strong>
+                <small>Contenido audiovisual</small>
+              </div>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-icon">◈</div>
+              <div class="stat-info">
+                <span>Novedades</span>
+                <strong>0</strong>
+                <small>Avisos y anuncios</small>
+              </div>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-icon">◉</div>
+              <div class="stat-info">
+                <span>Publicados</span>
+                <strong>0</strong>
+                <small>Contenidos visibles</small>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="dashboard-grid">
+
+            <article class="panel-card">
+
+              <div class="card-heading">
+                <div>
+                  <h2>Accesos rápidos</h2>
+                  <p>Administrá los contenidos de tu aplicación.</p>
+                </div>
+              </div>
+
+              <div class="quick-actions">
+
+                <button class="quick-action" data-section="publicaciones">
+                  <span class="action-icon">＋</span>
+                  <span>
+                    <strong>Nueva publicación</strong>
+                    <small>Crear una reflexión o artículo</small>
+                  </span>
+                  <b>›</b>
+                </button>
+
+                <button class="quick-action" data-section="videos">
+                  <span class="action-icon">▷</span>
+                  <span>
+                    <strong>Agregar video</strong>
+                    <small>Compartir un video de YouTube</small>
+                  </span>
+                  <b>›</b>
+                </button>
+
+                <button class="quick-action" data-section="novedades">
+                  <span class="action-icon">◈</span>
+                  <span>
+                    <strong>Crear novedad</strong>
+                    <small>Publicar un aviso importante</small>
+                  </span>
+                  <b>›</b>
+                </button>
+
+              </div>
+
+            </article>
+
+            <article class="panel-card welcome-card">
+              <div class="welcome-icon">📻</div>
+              <h2>La Hora Master</h2>
+              <p>Un espacio para escuchar, aprender y compartir.</p>
+              <span class="status-label">SISTEMA EN DESARROLLO</span>
+            </article>
+
+          </div>
+
+        </section>
+
+        <section class="admin-section" id="publicaciones">
+          <div class="page-heading">
+            <div>
+              <h1>Publicaciones</h1>
+              <p>Administrá reflexiones, devocionales y artículos.</p>
+            </div>
+            <button class="primary-button">＋ Nueva publicación</button>
+          </div>
+          <div class="empty-state">
+            <span>▤</span>
+            <h2>Próximamente</h2>
+            <p>Desde aquí podrás crear, editar y publicar artículos.</p>
+          </div>
+        </section>
+
+        <section class="admin-section" id="videos">
+          <div class="page-heading">
+            <div>
+              <h1>Videos</h1>
+              <p>Administrá los videos de La Hora Master.</p>
+            </div>
+            <button class="primary-button">＋ Agregar video</button>
+          </div>
+          <div class="empty-state">
+            <span>▷</span>
+            <h2>Próximamente</h2>
+            <p>Podrás agregar videos de YouTube y, más adelante, subir archivos.</p>
+          </div>
+        </section>
+
+        <section class="admin-section" id="novedades">
+          <div class="page-heading">
+            <div>
+              <h1>Novedades</h1>
+              <p>Publicá avisos y noticias para tus visitantes.</p>
+            </div>
+            <button class="primary-button">＋ Nueva novedad</button>
+          </div>
+          <div class="empty-state">
+            <span>◈</span>
+            <h2>Próximamente</h2>
+            <p>Podrás gestionar las novedades que aparecen en el inicio.</p>
+          </div>
+        </section>
+
+        <section class="admin-section" id="configuracion">
+          <div class="page-heading">
+            <div>
+              <h1>Configuración</h1>
+              <p>Opciones generales del administrador.</p>
+            </div>
+          </div>
+          <div class="empty-state">
+            <span>⚙</span>
+            <h2>Próximamente</h2>
+            <p>Configuraremos las opciones generales del sistema.</p>
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
